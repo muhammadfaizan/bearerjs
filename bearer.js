@@ -116,7 +116,8 @@ function bearerJS(settings) {
 
             var jsonToken={
                 access_token:bearer,
-                expDate:token.expire
+                expDate:token.expire,
+                success: true
             };
 
             res.send(jsonToken);
