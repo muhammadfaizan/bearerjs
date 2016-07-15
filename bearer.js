@@ -138,6 +138,7 @@ function bearerJS(settings) {
             var bearer=encrypted.toString();
 
             var jsonToken={
+                success: true,
                 access_token:bearer,
                 expDate:token.expire
             };
