@@ -151,6 +151,7 @@ function bearerJS(settings) {
             res.send({
                 error:"Login failed",
                 data:data
+                message: "Incorrect email or password"
             });
         };
         settings.createToken(req,function(token){proceed(token);},function(data){cancel(data)});
