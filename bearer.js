@@ -150,7 +150,7 @@ function bearerJS(settings) {
             res.statusCode=401;
             res.send({
                 error:"Login failed",
-                data:data
+                data:data,
                 message: "Incorrect email or password"
             });
         };
